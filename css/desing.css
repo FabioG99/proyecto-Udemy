@@ -1,0 +1,756 @@
+/* empezamos a escribir con los esqueleto del proyecto */
+
+/* mobil ferst ( lo que se vera en pantalla movil ) */
+body{
+    font-size: 12px;
+    font-family: 'Arial', Helvetica, sans-serif;
+    background: #233D58;
+    position: relative;
+    
+}
+header{
+    width: 100%;
+    height: 35px;
+    background: #233D58;
+    position: relative;
+    z-index: 999;
+}
+header h1{
+    display: none;
+}
+header nav .ioMenuMovil{
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 0px 0px 0px 10px;
+    padding-top: 5px;
+}
+header nav .ioMenuMovil img{
+    height: 100%;
+}
+header nav #card_menu{
+  
+    position: relative;
+    width: 230px;
+    background: white;
+    top: -30px;
+    left: 0px;
+    border-right: 3px solid #AFAEAE;
+    z-index: 999;
+    padding-bottom: 50px;
+}
+header nav #card_menu #logo_menu{
+    height: 200px;
+    width: 80%;
+    margin:  30px 0px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+    
+}
+header nav #card_menu #logo_menu img{
+    width: 100%;
+}
+header nav #card_menu ul{
+    margin-top: -20px;
+}
+header nav #card_menu ul li{
+    list-style: none;
+    font-size: 1.5em;
+    line-height: 37px;
+}
+header nav #card_menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+header #prev_section,
+header #next_section{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 5px;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+}
+header #prev_section{
+    right: 35px;
+}
+header #next_section{
+    right: 5px;
+}
+header #prev_section img,
+header #next_section img{
+    width: 90%;
+    top: 0px;
+    left: 0px;
+    position: relative;
+}
+header #prev_section img{
+    transform: rotate(180deg);
+}
+#slider{
+    width: 100%;
+    position: relative;
+    height: 800px;
+
+}
+#slider section.slide{
+    position: absolute;
+    width: 100%;
+    top: -15px;
+    left: 0px;
+}
+#slider #Home{
+    height: 100%;
+    background: #233D58;
+    font-family: 'Arial';
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+}
+#slider #Home .mainlogo{
+    background: none;
+    position: relative;
+
+    width:  60vw;
+    margin-left: 20vw;
+    min-height: 430px;
+}
+#slider #Home .mainlogo h2{
+    font-size: 1.2em;
+    padding-top: 80px;
+    color: white;
+    font-weight: lighter;
+}
+#slider #Home .mainlogo strong{
+    font-size: 2em;
+    font-family: "Arial";
+    display: block;
+}
+#slider #Home .mainlogo figure,
+#slider #Home .mainlogo figure, img{
+    width: 100%;
+    margin: 0px;
+}
+#slider #Home .buttonspage{
+    width: 100%;
+    text-align: center;
+
+}
+#slider #Home .buttonspage > *{
+    display: inline-block;
+
+    width: 40%;
+    margin: 5px 2.5%;
+    color: white;
+    padding: 15px 2.5%;
+    border-radius: 5px;
+}
+#slider #Home #contratame{
+    cursor: pointer;
+    background: #F8931F;
+}
+#slider #Home a{
+    
+    text-decoration: none;
+    background: #29abe2
+}
+
+#slider #aboutme{
+    height: 120%;
+}
+
+#slider #aboutme .imagedog{
+    -webkit-transition-duration: 0.3s;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+}
+#slider #aboutme .imagedog:hover{
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+
+#slider #Skills{
+    height: 120%;
+
+}
+
+#slider #Portafolio{
+    height: 120%;
+
+}
+#slider #Portafolio .pro{
+    -webkit-transition-duration: 0.3s;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+}
+#slider #Portafolio .pro:hover{
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+#slider #Blog{
+    height: 120%;
+}
+#slider #Blog .blogeer .titlefive{
+    font-size: 25px;
+    text-align: center;  
+    
+}
+#slider #Blog .blogeer {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    margin: 10px auto ;
+    
+}
+#slider #Blog #publicidad{
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+   
+}
+.posttt{
+    width: 96%;
+    height: auto; 
+    overflow: hidden;
+    padding: 7px;
+    background: white;
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #29abe2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #ccc;
+    margin-bottom: 2 5px;
+}
+.enlace-post{
+    text-decoration: none;
+}
+#publicidad a .titulo-post{
+    color: #233D58;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#publicidad a .titulo-post:hover{
+    text-decoration: underline;
+}
+#publicidad .img-post{
+    width: 150px;
+    height: 100px;
+    float: left;
+    margin: 7px 7px 7px 0px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#publicidad .datos-publicidad{
+    font-family: 'Arial', Helvetica, sans-serif;
+    color: #29abe2;
+}
+#publicidad .parrafo-post{
+    font-size: 14px;
+    color: #9b9b9b;
+    text-align: justify;
+    padding: 5px;
+}
+
+#publicidad .leer-mas{
+     background: #29abe2;
+     color: #233D58;
+     border: 0px;
+     padding: 5px;
+     text-decoration: none;
+     margin-top: 20px;
+     border-radius: 5px;
+
+}
+
+#contact_form{
+    position: absolute;
+    right: 0px;
+    top: 35px;
+    background: white;
+    width: 250px;
+    border-top: 1px solid black;
+    box-shadow: 0px 0px 3px #9F9E9E;
+    font-family: 'Arial';
+    height: 100vh;
+    z-index: 999;
+    display: none;
+}
+#contact_form #close_form {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 85%;
+    top: 190px;
+    z-index: 999;
+}
+#contact_form #close_form:hover {
+    cursor: pointer;
+}
+#contact_form #close_form:before {
+    font-family: 'Linearicons-Free';
+    content: "\e870";
+    top: 5px;
+    left: 7px;
+    position: relative;
+}
+#contact_form figure{
+    height: 170px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: #29abe2;
+}
+#contact_form figure img{
+    height: 100%;
+    width: 80%;
+    margin: 0px;
+}
+#contact_form p{
+    margin: 20px;
+    width: 90%;
+    margin-left: 5%;
+}
+#contact_form input,
+#contact_form textarea{
+    display: block;
+    margin: 20px;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 3px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+#contact_form #button{
+    background: #F8931F;
+    color: white;
+    border: none;
+    padding: 8px 0px;
+    border-radius: 5px;
+}
+#contact_button{
+    width: 60px;
+    height: 60px;
+    background: #F8931F;
+    border-radius: 50%;
+    color: white;
+    z-index: 80;
+    right: 10px;
+    position: fixed;
+    top: 80vh;
+
+}
+#contact_button:hover{
+    cursor: pointer;
+}
+#contact_button:before{
+    font-family: 'Linearicons-Free';
+    content: "\e818";
+    position: relative;
+    font-size: 3.8em;
+    left: 8px;
+    top: -1px;
+}
+footer{
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    z-index: 90;
+    height: 150px;
+    position: fixed;
+    bottom:  -130px;
+    transition-duration: 0.5s;
+}
+footer:hover{
+    bottom: 0px;
+}
+footer:after{
+    font-family: 'Linearicons-Free';
+    content: "\e874";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    background: black;
+    margin-top: -30px;
+    border-radius: 50%;
+    color: black;
+    transform: rotate(180deg);
+    font-size: 5em;
+    transition-duration: 0.5s;
+    text-shadow: 0px 15px 0px white;
+}
+footer:hover:after{
+    transform: rotate(0deg);
+    background: white;
+    color: black;
+    text-shadow: 0px 0px 0px black;
+
+}
+footer .rrss{
+    margin-top: 70px;
+    width: 100%;
+    height: 40px;
+}
+footer .rrss a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+}
+footer .rrss a:before{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    font-size: 2em;
+    top:  5px;
+    left: 10px;
+    font-family: 'Linearicons-Free';
+}
+footer .rrss a:nth-child(1):before{
+    content: "\e830";
+}
+footer .rrss a:nth-child(2):before{
+    content: "\e833";
+}
+footer .rrss  a:nth-child(3):before{
+    content: "\e849";
+}
+footer .rrss a:nth-child(4):before{
+    content: "\e84a";
+}
+footer p{
+    font-size: 0.7em;
+    font-weight: lighter;
+    font-family: 'Arial';
+}
+@media screen and (min-width: 480px){
+    #slider #Home .mainlogo{
+        width: 270px;
+        left: 50%;
+        margin-left: -135px;
+        padding-bottom: 50px;
+
+    }
+    #slider #Home .mainlogo h2{
+        font-size: 1.4em;
+    }
+    #slider #Home .mainlogo figure{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #slider #Home .buttonspage > *{
+        width: 200px;
+    }
+    #slider #aboutme .presentasion{
+        margin-right:30px;
+        margin-left: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #slider #aboutme .titleone{
+        font-size: 28px;
+        margin:32px 0 0 0px;
+        text-align: center;
+    }
+    #slider #aboutme .titletwo{
+        font-size: 20px;
+
+    }
+    #slider #aboutme .textone {
+        font-size: 14px;
+        text-align: justify;
+        margin: 5px 30px 0px 0px;
+    }
+    #slider #aboutme .titlethree{
+        font-size: 20px;
+
+    }
+    #slider #aboutme .texttwo{
+        font-size: 14px;
+        text-align: justify;
+        margin: 5px 30px 70px 0px;
+    }
+    #slider #aboutme .imagedog{
+        height: 200px;
+        width: 300px;
+        display: block;
+        margin: auto;
+    }
+    #slider #Skills .habilidades{
+        margin-right:30px;
+        margin-left: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #slider #Skills .titlefour{
+        font-size: 28px;
+        margin:30px 0 0 0px;
+        text-align: center;
+    }
+    #slider #Skills h3{
+        font-size: 20px;
+    }
+    #slider #Skills p{
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #slider #Portafolio .guia{
+        margin-right:30px;
+        margin-left: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #slider #Portafolio .guia .titlefive{
+        font-size: 28px;
+        margin:30px 0 0 0px;
+        text-align: left;
+    }
+    #slider #Portafolio .guia h3{
+        font-size: 20px;
+        text-align: left;    
+    }
+    #slider #Portafolio .pro{
+        width: 150px;
+        height: 100px;
+        border-radius: 0 50%  0 100%;
+        background: #29abe2;
+        border: 3px solid gray;
+    }
+    #slider #Portafolio .pro figure img {
+        margin-left: 55px;
+    }
+    #slider #Portafolio p{
+        font-size: 14px;
+        text-align: justify;
+        padding-left: 50%;
+        margin-top: -30%;
+    }
+}
+@media screen and (min-width: 600px){
+
+}
+
+@media screen and (min-width: 767px){
+
+    header{
+        height: 50px;
+    }
+    header h1{
+        display: inline-block;
+        width: 20%;
+        margin: 0px;
+        height: 50px;
+        margin-left: 80px;
+        line-height: 50px;
+        min-width: 200px;
+
+    }
+      header h1 > *{
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: white;
+        font-size: 0.8em;
+        margin: 0px 3px;
+    }
+    header h1 figure{
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+    }
+    header h1 figure img{
+        width: 100%;
+    }
+
+    header nav {
+        display: inline-block;
+        vertical-align: middle;
+        width: 62%;
+        position: relative;
+    }
+    header nav #showMenu,
+    header nav #hideMenu {
+        display: none;
+    }
+    header nav #card_menu{
+        display: inline-block;
+        border: none;
+        background: none;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 0px;
+
+    }
+    header nav #card_menu figure{
+        display: none;
+    }
+    header nav #card_menu ul{
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+    }
+    header nav #card_menu ul li{
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+        font-size: 1.1em;
+        margin: 0px -2px;
+    }
+    header nav #card_menu ul li a{
+        color: white;
+    }
+    header #prev_section,
+    header #next_section{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #29abe2;
+        right: 40px;
+        z-index: 999;
+        border-radius: 50%;
+    }
+    header #prev_section{
+        top: 115px;
+    }
+    header #next_section{
+        top: 190px;
+    }
+    header #prev_section img,
+    header #next_section img{
+        width: 80%;
+        top: 4px;
+        left: 5px;   
+    }
+    #contact_form{
+        top: 50px;
+        width: 250px;
+    }
+    #contact_button{
+        right: 40px;
+    }
+    #slider #aboutme  .presentasion{
+
+        margin-right: 8%;
+        margin-left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(5, 50px);
+    }
+    #slider #aboutme  .titleone{
+        font-family: 'Arial';
+        font-size: 30px;
+        grid-column: 1;
+        grid-row: 1/2;
+        text-align: center; 
+    }
+    #slider #aboutme .titleone hr{
+        width: 85%;
+    }
+    #slider #aboutme  .titletwo{
+        font-family: 'Arial';
+        font-size: 25px;
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+    }
+    #slider #aboutme  .textone {
+        grid-column: 1;
+        font-family: 'Arial';
+        font-size: 20px;
+        grid-row: 4;
+        padding-top: 20px;
+        text-align: justify;
+        margin: 3rem 7rem 1rem 4rem;
+    }
+    #slider #aboutme  .titlethree{
+        font-family: 'Arial';
+        font-size: 25px;
+        grid-column: 2;
+        grid-row: 3;
+        text-align: center;
+    }
+    #slider #aboutme  .texttwo{
+        grid-column: 2;
+        font-family: 'Arial';
+        font-size: 20px;
+        grid-row: 4;
+        font-size: 20px;
+        padding-top: 20px;
+        text-align: justify;
+        margin: 3rem 0rem 1rem 8rem;
+    }
+    #slider #aboutme figure .imagedog{
+        margin: 12rem 0rem 0rem 45rem;
+        height: 300px;
+        width: 400px;
+    }
+
+    #slider #Skills .habilidades{
+        margin-right: 8%;
+        margin-left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #slider #Skills .titlefour{
+        font-size: 30px;
+        text-align: center;
+        margin:30px 0 0 0px;
+    }
+    #slider #Skills h3{
+        font-size: 25px;
+    }
+    #slider #Skills p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    #slider #Portafolio .guia{
+        margin-right: 8%;
+        margin-left: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #slider #Portafolio .guia .titlefive{
+        font-size: 30px;
+        text-align: center;
+        margin:30px 0 0 0px;
+    }
+    #slider #Portafolio .guia h3{
+        font-size: 25px;
+        text-align: left;  
+        margin-left: 15%; 
+    }
+    #slider #Portafolio .pro{
+        
+        width: 200px;
+        height: 100px;
+        border-radius: 0 50%  0 50%;
+        background: #29abe2;
+        border: 3px solid gray;
+        margin-left: 15%;
+       
+    }
+    #slider #Portafolio .guia figure img {
+        width: 100px;
+        height: 90px;
+        margin-left: 20px;
+        margin-top: -8px;
+    }
+    #slider #Portafolio .guia p{
+        font-size: 20px;
+        text-align: justify;
+        margin-top: -5%;
+        margin-right: 8%;
+        
+    }
+}
+@media screen and (min-width: 950px){
+
+}
